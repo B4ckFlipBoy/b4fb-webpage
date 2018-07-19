@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<title>Vue! test</title>
+
+<!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="dev-1">
+        <p>{{ msg }}</p>
+        <p v-once>This will never change: {{ msg }}</p>
+
+        <p>{{ rawHtml }}</p>
+        <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+
+        <p v-bind:id="dynamicId">Die id dises elements ist: {{ dynamicId }}</p>
+    </div>
+<script src="test.js"></script>
+</body>
+</html>
