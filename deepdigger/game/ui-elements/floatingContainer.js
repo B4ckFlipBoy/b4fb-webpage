@@ -43,4 +43,5 @@ function FloatingContainer(x, y, width, height) {
             this.stats.lastMouseY = null;
         }
     };
+    this.setSize = function (){};
 }

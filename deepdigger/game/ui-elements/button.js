@@ -18,7 +18,7 @@ function Button(x, y, width, height) {
             fill(this.stats.fill);
         }
 
-        rect(x, y, width, height);
+        rect(this.stats.x, this.stats.y, this.stats.width, this.stats.height);
     };
     this.checkMouseEvents = function (mouseX, mouseY, clicked) {
         if (mouseX >= this.stats.x && mouseX <= this.stats.x + this.stats.width &&
@@ -34,5 +34,5 @@ function Button(x, y, width, height) {
     this.clicked = function () {
         console.log("clicked!");
     };
-
+    this.setSize = function (newWidth, newHeight) {};
 }

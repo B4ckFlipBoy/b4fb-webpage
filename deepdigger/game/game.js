@@ -12,6 +12,11 @@ function Game() {
         this.uiElements = [];
         let startButton = new Button(this.viewpos.width / 2 - 200 / 2, this.viewpos.height / 2 - 80 / 2, 200, 80);
         startButton.clicked = () => {game.initGameScreen();};
+        startButton.setSize = function (newWidth, newHeight) {
+            console.log("rezised");
+            startButton.stats.x = game.viewpos.width / 2 - 200 / 2;
+            startButton.stats.y = game.viewpos.height / 2 - 80 / 2;
+        };
         this.uiElements.push(startButton);
     };
 
@@ -36,6 +41,9 @@ function Game() {
         } else {
             this.viewpos.width = newHeight;
         }
+        this.uiElements.forEach((element) => {
+            element.setSize(newWidth, newHeight);
+        });
     };
 
 
