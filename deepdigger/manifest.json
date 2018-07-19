@@ -1,8 +1,8 @@
 {
   "short_name": "DeepDigger",
   "name": "DeepDigger",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "/deepdigger/index.html",
+  "scope": "/deepdigger/",
   "background_color": "#a0a0a0",
   "display": "fullscreen",
   "theme_color": "#a0a0a0",
@@ -14,11 +14,11 @@
     }
   ],
   "icons": [{
-    "src": "192xicon.png",
+    "src": "/deepdigger/192xicon.png",
     "size": "192x192",
     "type": "image/png"
   },{
-    "src": "512xicon.png",
+    "src": "/deepdigger/512xicon.png",
     "size": "512x512",
     "type": "image/png"
   }]
