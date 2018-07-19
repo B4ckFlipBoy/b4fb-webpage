@@ -4,8 +4,6 @@ function Button(x, y, width, height) {
     this.stats = {
         x: x,
         y: y,
-        xOffset:0,
-        yOffset:0,
         width: width,
         height: height,
         stroke: 0,

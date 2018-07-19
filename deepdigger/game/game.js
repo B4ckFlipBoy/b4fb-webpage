@@ -54,9 +54,10 @@ function Game() {
     this.initGameScreen = function () {
         console.log("Game starting...");
         this.uiElements = [];
-        let startButton = new Button(this.viewpos.width / 2 - 80 / 2, this.viewpos.height / 2 - 200 / 2, 80, 200);
-        startButton.clicked = () => {game.initMainScreen();};
-        this.uiElements.push(startButton);
+        let floatingContainer = new FloatingContainer(0, 0, this.viewpos.width, 1000);
+        floatingContainer.stats.fill = 128;
+        floatingContainer.stats.stroke = color(0, 0, 255);
+        this.uiElements.push(floatingContainer);
     };
 
 }
