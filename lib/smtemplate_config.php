@@ -6,10 +6,11 @@
  * Time: 20:25
  */
 
+$basepath = '/var/www/b4fb.de/';
 $smtamplate_config =
     array(
-      'template_dir' => 'views/',
-      'compile_dir' => 'lib/smarty/tamplate_c/',
-      'cache_dir' => 'lib/smarty/cache/',
-      'config_dir' => 'lib/smarty/config',
+      'template_dir' => $basepath.'views/',
+      'compile_dir' => $basepath.'lib/smarty/tamplate_c/',
+      'cache_dir' => $basepath.'lib/smarty/cache/',
+      'config_dir' => $basepath.'lib/smarty/config',
     );
